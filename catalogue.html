@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKON Laboratories | Product Catalogue</title>
+    <meta name="description" content="View the IKOB Lab product catalogue directly on our website.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html#hero" class="logo">
+                    <img src="logo.png" alt="IKOB Lab">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="divisions.html">Divisions</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="https://wa.me/923330341980" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    Become Distributor
+                </a>
+                <button class="menu-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalogue-page">
+        <section class="catalogue-hero">
+            <div class="container catalogue-hero-inner">
+                <div class="catalogue-heading">
+                    <p class="eyebrow">PRODUCT BROCHURE</p>
+                    <h1>Explore the complete<br><span>IKON catalogue.</span></h1>
+                    <p>Discover our pharmaceutical portfolio, trusted formulations and healthcare solutions—all in one interactive document.</p>
+                    <div class="catalogue-actions">
+                        <a href="catalogue.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Full Catalogue <span>↗</span></a>
+                        <a href="catalogue.pdf" download class="btn catalogue-download">Download PDF <span>↓</span></a>
+                    </div>
+                </div>
+                <aside class="catalogue-quick-card">
+                    <div class="catalogue-file-icon"><span>PDF</span><img src="logo.png" alt="IKON Laboratories logo"><strong>IKON</strong></div>
+                    <div class="catalogue-file-meta"><p>Official product catalogue</p><h2>IKON Laboratories</h2><div><span>Company brochure</span><span>PDF document</span></div></div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="catalogue-preview-section">
+            <div class="container">
+                <div class="catalogue-toolbar">
+                    <div><span class="status-dot"></span><strong>Catalogue preview</strong></div>
+                    <div class="catalogue-toolbar-actions"><a href="catalogue.pdf" target="_blank" rel="noopener noreferrer">Fullscreen <span>↗</span></a><a href="catalogue.pdf" download>Download <span>↓</span></a></div>
+                </div>
+                <div class="catalogue-preview-shell">
+                    <aside class="catalogue-side-panel">
+                        <div><span class="catalogue-panel-number">01</span><h2>Our product portfolio</h2><p>Browse Gynea, General and other trusted healthcare divisions.</p></div>
+                        <div class="catalogue-page-details"><div><span>Document</span><strong>Official Catalogue</strong></div><div><span>Format</span><strong>PDF</strong></div><div><span>Source</span><strong>IKON Laboratories</strong></div></div>
+                        <a href="divisions.html" class="catalogue-product-link">Explore Products <span>→</span></a>
+                    </aside>
+                    <div class="catalogue-viewer">
+                        <iframe src="catalogue.pdf#view=FitH&toolbar=1&navpanes=0" title="IKON Laboratories Product Catalogue" loading="eager"></iframe>
+                        <div class="catalogue-mobile-preview"><img src="logo.png" alt="IKON Laboratories"><strong>Interactive PDF Catalogue</strong><p>Use the full-screen or download option for the best reading experience.</p><a href="catalogue.pdf" target="_blank" rel="noopener noreferrer">Open Catalogue</a></div>
+                    </div>
+                </div>
+                <p class="catalogue-fallback">If the embedded viewer does not load, <a href="catalogue.pdf" target="_blank" rel="noopener noreferrer">open the catalogue in a new tab</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+        });
+    </script>
+    <script src="script.js"></script>
+
+    <div class="social-fixed">
+        <a class="social-btn facebook" href="https://www.facebook.com/ikonlab" target="_blank" rel="noopener noreferrer">
+            <span class="social-logo facebook-logo"></span>
+            <span>Facebook</span>
+        </a>
+        <a class="social-btn instagram" href="https://www.instagram.com/ikon_laboratories/" target="_blank" rel="noopener noreferrer">
+            <span class="social-logo instagram-logo"></span>
+            <span>Instagram</span>
+        </a>
+        <a class="social-btn whatsapp" href="https://wa.me/923330341980" target="_blank" rel="noopener noreferrer">
+            <span class="social-logo whatsapp-logo">W</span>
+            <span>WhatsApp</span>
+        </a>
+        <button id="aiSupportBtn" class="social-btn ai-support" type="button">
+            <span class="support-logo"></span>
+            <span>AI Support</span>
+        </button>
+    </div>
+
+    <div id="aiSupportModal" class="ai-support-modal hidden">
+        <div class="ai-support-panel">
+            <div class="ai-support-header">
+                <span>AI Support</span>
+                <button id="aiSupportClose" class="ai-support-close" type="button">&times;</button>
+            </div>
+            <div id="aiSupportMessages" class="ai-support-messages">
+                <div class="ai-support-message bot">
+                    <span>Hi! Aap apna sawal puch sakte hain. Main aapki madad karunga.</span>
+                </div>
+            </div>
+            <div class="ai-support-footer">
+                <input id="aiSupportInput" class="ai-support-input" type="text" placeholder="Apna sawal yahan likhein..." />
+                <button id="aiSupportSend" class="ai-support-send" type="button">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
